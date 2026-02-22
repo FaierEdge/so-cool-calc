@@ -14,13 +14,18 @@ namespace cool_calc
             double a = Convert.ToDouble(Console.ReadLine());
             Console.Write("Введите второе число: ");
             double b = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Введите операцию (+): ");
+            Console.Write("Введите операцию (+, -): ");
             string operation = Console.ReadLine();
 
             if (operation == "+")
             {
                 double result = a + b;
                 Console.WriteLine($"{a} + {b} = {result}");
+            }
+            else if (operation == "-")
+            {
+                double result = a - b;
+                Console.WriteLine($"{a} - {b} = {result}");
             }
             else
             {
