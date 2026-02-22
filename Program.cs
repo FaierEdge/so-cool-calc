@@ -10,12 +10,11 @@ namespace cool_calc
     {
         static void Main(string[] args)
         {
-            Console.Title = "Calc";
             Console.Write("Введите первое число: ");
             double a = Convert.ToDouble(Console.ReadLine());
             Console.Write("Введите второе число: ");
             double b = Convert.ToDouble(Console.ReadLine());
-            Console.Write("Введите операцию (+, -): ");
+            Console.Write("Введите операцию (+): ");
             string operation = Console.ReadLine();
 
             if (operation == "+")
